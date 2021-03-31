@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="grid">
+    <title value="CSS Grid" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The HTML basics
+      ]]>
+    </description>
+    <concept name="grid-layout">
+      <title value="Grid Layout" />
+      <docLink value="https://www.w3schools.com/css/css_grid.asp" />
+      <description>
+        <![CDATA[
+          A grid layout consists of a parent element, with one or more child elements.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
+        ]]>
+      </code>
+    </concept>
+    <concept name="grid-columns-rows-gaps-lines">
+      <title value="Columns, rows, gaps and lines" />
+      <docLink value="https://www.w3schools.com/css/css_grid.asp" />
+      <description>
+        <![CDATA[
+          The vertical lines of grid items are called columns. <br>
+          The horizontal lines of grid items are called rows. <br>
+          The spaces between each column/row are called gaps. <br>
+          The lines between columns are called column lines. <br>
+          The lines between rows are called row lines.
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-gap: 50px 100px;
+}
+        ]]>
+      </code>
+      <code language="css">
+        <![CDATA[
+/* Place a grid item at column line 1, and let it end on column line 3 */
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/* Place a grid item at row line 1, and let it end on row line 3 */
+.item2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

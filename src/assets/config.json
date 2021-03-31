@@ -1,0 +1,71 @@
+{
+  "version": "0.0.1",
+  "contexts": ["w3c", "bootstrap", "foundation"],
+  "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
+    "pseudo-classes", "grid", "buttons", "forms", "tooltips"],
+  "contexts-config": {
+    "w3c": {
+      "topics": {
+        "css-basics": {
+          "data-file": "w3c/css.xml"
+        },
+        "fonts": {
+          "data-file": "w3c/fonts.xml"
+        },
+        "media-queries": {
+          "data-file": "w3c/media-queries.xml"
+        },
+        "css-variables": {
+          "data-file": "w3c/css-variables.xml"
+        },
+        "pseudo-classes": {
+          "data-file": "w3c/pseudo-classes.xml"
+        },
+        "animations": {
+          "data-file": "w3c/animations.xml"
+        },
+        "grid": {
+          "data-file": "w3c/grid.xml"
+        }
+      }
+    },
+    "bootstrap": {
+      "topics": {
+        "grid": {
+          "data-file": "bootstrap/grid.xml"
+        }
+      }
+    },
+    "foundation": {
+      "topics": {
+        "grid": {
+          "data-file": "foundation/grid.xml"
+        }
+      }
+    }
+  },
+  "router": {
+    "basePath": "/",
+    "default": "/css-basics",
+    "routes": {
+      "css-basics": { "url": "/css-basics" },
+      "fonts": { "url": "/fonts" },
+      "grid": { "url": "/grid" }
+    }
+  },
+  "sidebar": {
+    "links": {
+      "css-basics": { "text": "CSS basics", "url": "./css-basics" },
+      "fonts": { "text": "Fonts", "url": "./fonts" },
+      "grid": { "text": "Grid", "url": "./grid" }
+    }
+  },
+  "context-picker": {
+    "default": "w3c",
+    "buttons": {
+      "w3c": { "text": "W3C" },
+      "bootstrap": { "text": "Bootstrap" },
+      "foundation": { "text": "Foundation" }
+    }
+  }
+}

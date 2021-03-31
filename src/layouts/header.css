@@ -1,0 +1,22 @@
+.header {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  width: 100%;
+  min-height: var(--layouts-header-height);
+  max-height: var(--layouts-header-height);
+
+  background-color: var(--color-secondary-1-background);
+  color: var(--color-secondary-2-detail-2);
+}
+
+.header h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+
+  font-family: 'jura';
+  font-size: 2.7rem;
+}

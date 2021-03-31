@@ -1,0 +1,55 @@
+@font-face {
+  font-family: sourceCodePro;
+  src: url(./assets/fonts/source-code-pro-v13-latin-600.woff2);
+}
+
+@font-face {
+  font-family: jura;
+  src: url(./assets/fonts/jura-v15-latin-regular.woff2);
+}
+
+@font-face {
+  font-family: major-mono-display;
+  src: url(./assets/fonts/major-mono-display-v5-latin-regular.woff2);
+}
+
+@font-face {
+  font-family: karma;
+  src: url(./assets/fonts/karma-v11-latin-regular.woff2);
+}
+
+@font-face {
+  font-family: sora;
+  src: url(./assets/fonts/sora-v1-latin-regular.woff2);
+}
+
+
+:root {
+  --color-primary-background: #071237;
+  --color-primary-foreground: #f3722cff;
+  --color-primary-detail-1: #1B3178;
+  --color-primary-detail-2: #4C68C4;
+  --color-primary-detail-3: #7992E6;
+
+  --color-secondary-1-background: #511402;
+  --color-secondary-1-foreground: #f94144ff;
+  --color-secondary-1-detail-1: #B13916;
+  --color-secondary-1-detail-2: #f9c74fff;
+  --color-secondary-1-detail-3: #577590ff;
+
+  --color-secondary-2-background: #3E4E02;
+  --color-secondary-2-foreground: #90be6dff;
+  --color-secondary-2-detail-1: #8CAA15;
+  --color-secondary-2-detail-2: #FF9576;
+  --color-secondary-2-detail-3: #43aa8bff;
+
+  --color-red-salsa: #f94144ff;
+  --color-orange-red: #f3722cff;
+  --color-yellow-orange-color-wheel: #f8961eff;
+  --color-maize-crayola: #f9c74fff;
+  --color-pistachio: #90be6dff;
+  --color-zomp: #43aa8bff;
+  --color-queen-blue: #577590ff;
+}
+
+
