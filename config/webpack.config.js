@@ -39,6 +39,14 @@ module.exports = {
                 if (url.includes('.woff2')) {
                   return false;
                 }
+                
+                if (url.includes('.svg')) { // Don't handle `.svg` urls
+                  return false;
+                }
+
+                if (url.includes('.png')) { // Don't handle `.png` urls
+                  return false;
+                }
     
                 return true;
               },
@@ -65,6 +73,8 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, '../dist'),
     compress: true,
+    // host: '0.0.0.0',
+    disableHostCheck: true,
     port: 9000,
     contentBasePublicPath: '/',
     historyApiFallback: true,

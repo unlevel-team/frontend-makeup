@@ -50,14 +50,22 @@
     "routes": {
       "css-basics": { "url": "/css-basics" },
       "fonts": { "url": "/fonts" },
-      "grid": { "url": "/grid" }
+      "media-queries": { "url": "/media-queries" },
+      "css-variables": { "url": "/css-variables" },
+      "pseudo-classes": { "url": "/pseudo-classes" },
+      "grid": { "url": "/grid" },
+      "animations": { "url": "/animations" }
     }
   },
   "sidebar": {
     "links": {
       "css-basics": { "text": "CSS basics", "url": "./css-basics" },
       "fonts": { "text": "Fonts", "url": "./fonts" },
-      "grid": { "text": "Grid", "url": "./grid" }
+      "media-queries": { "text": "Media queries", "url": "./media-queries" },
+      "css-variables": { "text": "CSS variables", "url": "./css-variables" },
+      "pseudo-classes": { "text": "Pseudo-classes", "url": "./pseudo-classes" },
+      "grid": { "text": "Grid", "url": "./grid" },
+      "animations": { "text": "Animations", "url": "./animations" }
     }
   },
   "context-picker": {

@@ -11,12 +11,64 @@
   color: var(--color-secondary-2-detail-2);
 }
 
-.header h1 {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-top: 0.3rem;
-  margin-left: 1rem;
-
+.header .title {
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
   font-family: 'jura';
-  font-size: 2.7rem;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* Links ------------------------------------------------------------------ */
+.header .links {
+  display: inline;
+  float: right;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+
+.header .links a {
+  text-decoration: none;
+}
+
+.header .links .image {
+  display: inline-block;
+  background-color: var(--color-secondary-1-foreground);
+  height: 50px;
+  width: 50px;
+  border-radius: 0.7em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .links .info-image {
+  background-image: url("./assets/images/information-icon.svg");
+}
+
+.header .links .github-image {
+  background-image: url("./assets/images/GitHub-Mark-120px-plus.png");
+}
+
+/* Modal ------------------------------------------------------------------ */
+.header .modal.info .modal-header {
+  background-color: var(--color-primary-detail-1);
+  color: var(--color-secondary-2-foreground);
+
+  font-family: 'sora';
+  font-size: 1.11em;
+}
+
+.header .modal.info .modal-body {
+  background-color: var(--color-primary-detail-3);
+  color: var(--color-primary-background);
+
+  font-family: 'sourceCodePro';
+  font-size: 1em;
+}
+
+.header .modal.info .modal-footer {
+  background-color: var(--color-primary-detail-1);
 }

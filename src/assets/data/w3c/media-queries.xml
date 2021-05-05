@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="media-queries">
+    <title value="Media Queries" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The Media query
+      ]]>
+    </description>
+    <concept name="what-is-media-query">
+      <title value="What is a Media Query?" />
+      <docLink value="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" />
+      <description>
+        <![CDATA[
+Media query is a CSS technique introduced in CSS3. </br>
+It uses the <code>@media</code> rule to include a block of CSS properties only if a certain condition is true.
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+/* If the browser window is 600px or smaller, the background color will be lightblue */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+        ]]>
+      </code>
+      <code language="css">
+        <![CDATA[
+/* CSS syntax */
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+        ]]>
+      </code>
+    </concept>
+    <concept name="mobile-first">
+      <title value="Always Design for Mobile First" />
+      <docLink value="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" />
+      <description>
+        <![CDATA[
+Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+        ]]>
+      </code>
+    </concept>
+    <concept name="device-breakpoints">
+      <title value="Typical Device Breakpoints" />
+      <docLink value="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" />
+      <description>
+        <![CDATA[
+There are tons of screens and devices with different heights and widths, so it is hard to create an exact breakpoint for each device.
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+        ]]>
+      </code>
+    </concept>
+    <concept name="orientation">
+      <title value="Orientation: Portrait / Landscape" />
+      <docLink value="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" />
+      <description>
+        <![CDATA[
+Media queries can also be used to change layout of a page depending on the orientation of the browser. <br/>
+You can have a set of CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation:
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>
