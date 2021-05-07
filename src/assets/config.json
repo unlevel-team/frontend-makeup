@@ -26,6 +26,9 @@
         },
         "grid": {
           "data-file": "w3c/grid.xml"
+        },
+        "buttons": {
+          "data-file": "w3c/buttons.xml"
         }
       }
     },
@@ -33,6 +36,9 @@
       "topics": {
         "grid": {
           "data-file": "bootstrap/grid.xml"
+        },
+        "buttons": {
+          "data-file": "bootstrap/buttons.xml"
         }
       }
     },
@@ -40,6 +46,9 @@
       "topics": {
         "grid": {
           "data-file": "foundation/grid.xml"
+        },
+        "buttons": {
+          "data-file": "foundation/buttons.xml"
         }
       }
     }
@@ -54,7 +63,8 @@
       "css-variables": { "url": "/css-variables" },
       "pseudo-classes": { "url": "/pseudo-classes" },
       "grid": { "url": "/grid" },
-      "animations": { "url": "/animations" }
+      "animations": { "url": "/animations" },
+      "buttons": { "url": "/buttons" }
     }
   },
   "sidebar": {
@@ -65,7 +75,8 @@
       "css-variables": { "text": "CSS variables", "url": "./css-variables" },
       "pseudo-classes": { "text": "Pseudo-classes", "url": "./pseudo-classes" },
       "grid": { "text": "Grid", "url": "./grid" },
-      "animations": { "text": "Animations", "url": "./animations" }
+      "animations": { "text": "Animations", "url": "./animations" },
+      "buttons": { "text": "Buttons", "url": "./buttons" }
     }
   },
   "context-picker": {
