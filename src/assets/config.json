@@ -29,6 +29,9 @@
         },
         "buttons": {
           "data-file": "w3c/buttons.xml"
+        },
+        "forms": {
+          "data-file": "w3c/forms.xml"
         }
       }
     },
@@ -39,6 +42,9 @@
         },
         "buttons": {
           "data-file": "bootstrap/buttons.xml"
+        },
+        "forms": {
+          "data-file": "bootstrap/forms.xml"
         }
       }
     },
@@ -49,6 +55,9 @@
         },
         "buttons": {
           "data-file": "foundation/buttons.xml"
+        },
+        "forms": {
+          "data-file": "foundation/forms.xml"
         }
       }
     }
@@ -64,7 +73,8 @@
       "pseudo-classes": { "url": "/pseudo-classes" },
       "grid": { "url": "/grid" },
       "animations": { "url": "/animations" },
-      "buttons": { "url": "/buttons" }
+      "buttons": { "url": "/buttons" },
+      "forms": { "url": "/forms" }
     }
   },
   "sidebar": {
@@ -76,7 +86,8 @@
       "pseudo-classes": { "text": "Pseudo-classes", "url": "./pseudo-classes" },
       "grid": { "text": "Grid", "url": "./grid" },
       "animations": { "text": "Animations", "url": "./animations" },
-      "buttons": { "text": "Buttons", "url": "./buttons" }
+      "buttons": { "text": "Buttons", "url": "./buttons" },
+      "forms": { "text": "Forms", "url": "./forms" }
     }
   },
   "context-picker": {

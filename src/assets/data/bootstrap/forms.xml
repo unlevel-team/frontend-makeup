@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="forms">
+    <title value="Bootstrap forms" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The Bootstrap forms
+      ]]>
+    </description>
+    <concept name="form-controls">
+      <title value="Form controls" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Textual form controls—like <code>&lt;input&gt;</code>s, <code>&lt;select&gt;</code>s, and <code>&lt;textarea&gt;</code>s—are styled with the <code>.form-control</code> class. 
+Included are styles for general appearance, focus state, sizing, and more. <br/>
+For file inputs, swap the <code>.form-control</code> for <code>.form-control-file</code>.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+        ]]>
+      </code>
+    </concept>
+    <concept name="sizing">
+      <title value="Sizing" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+
+<select class="form-control form-control-lg">
+  <option>Large select</option>
+</select>
+<select class="form-control">
+  <option>Default select</option>
+</select>
+<select class="form-control form-control-sm">
+  <option>Small select</option>
+</select>
+        ]]>
+      </code>
+    </concept>
+    <concept name="readonly">
+      <title value="Readonly" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Add the readonly boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor. <br/>
+If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, use the <code>.form-control-plaintext</code> class to remove the default 
+form field styling and preserve the correct margin and padding.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+
+<form>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+</form>
+        ]]>
+      </code>
+    </concept>
+    <concept name="range-inputs">
+      <title value="Range Inputs" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Set horizontally scrollable range inputs using <code>.form-control-range</code>.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<form>
+  <div class="form-group">
+    <label for="formControlRange">Example Range input</label>
+    <input type="range" class="form-control-range" id="formControlRange">
+  </div>
+</form>
+        ]]>
+      </code>
+    </concept>
+    <concept name="checkboxes-radios">
+      <title value="Checkboxes and radios" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Default checkboxes and radios are improved upon with the help of <code>.form-check</code>, a single class for both input types that improves the layout and 
+behavior of their HTML elements. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many. <br/>
+Disabled checkboxes and radios are supported. The <code>disabled</code> attribute will apply a lighter color to help indicate the input’s state. <br/>
+Group checkboxes or radios on the same horizontal row by adding <code>.form-check-inline</code> to any <code>.form-check</code>. <br/>
+Add <code>.position-static</code> to inputs within <code>.form-check</code> that don’t have any label text.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+  <label class="form-check-label" for="defaultCheck2">
+    Disabled checkbox
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Second default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+  <label class="form-check-label" for="exampleRadios3">
+    Disabled radio
+  </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+</div>
+<div class="form-check">
+  <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+</div>
+        ]]>
+      </code>
+    </concept>
+    <concept name="layout">
+      <title value="Layout" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Since Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. 
+Additional classes can be used to vary this layout on a per-form basis.
+<ul>
+  <li><strong>Form groups</strong>The <code>.form-group</code> class is the easiest way to add some structure to forms. It provides a flexible class that encourages proper grouping of labels, 
+  controls, optional help text, and form validation messaging.</li>
+  <li><strong>Form grid</strong>More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.</li>
+  <li><strong>Form row</strong>You may also swap <code>.row</code> for <code>.form-row</code>, a variation of our standard grid row that overrides the default column gutters for 
+  tighter and more compact layouts.</li>
+  <li><strong>Inline forms</strong>Use the <code>.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row.</li>
+</ul>
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+  </div>
+</form>
+
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+
+<form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+
+<form class="form-inline">
+  <label class="sr-only" for="inlineFormInputName2">Name</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">@</div>
+    </div>
+    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+  </div>
+
+  <div class="form-check mb-2 mr-sm-2">
+    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+    <label class="form-check-label" for="inlineFormCheck">
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+        ]]>
+      </code>
+    </concept>
+    <concept name="help-text">
+      <title value="Help text" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Block-level help text in forms can be created using <code>.form-text</code>. Inline help text can be flexibly implemented using any inline HTML 
+element and utility classes like <code>.text-muted</code>.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<label for="inputPassword5">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<small id="passwordHelpBlock" class="form-text text-muted">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</small>
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="inputPassword6">Password</label>
+    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+    <small id="passwordHelpInline" class="text-muted">
+      Must be 8-20 characters long.
+    </small>
+  </div>
+</form>
+        ]]>
+      </code>
+    </concept>
+    <concept name="disabled-forms">
+      <title value="Disabled forms" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/forms/" />
+      <description>
+        <![CDATA[
+Add the <code>disabled</code> boolean attribute on an input to prevent user interactions and make it appear lighter.
+Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>
