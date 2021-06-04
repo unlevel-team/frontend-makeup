@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="tooltips">
+    <title value="Bootstrap tooltips" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The Bootstrap tooltips
+      ]]>
+    </description>
+    <concept name="tooltip-plugin">
+      <title value="The tooltip plugin" />
+      <docLink value="https://getbootstrap.com/docs/5.0/components/tooltips/" />
+      <description>
+        <![CDATA[
+Things to know when using the tooltip plugin:
+<ul>
+  <li>Tooltips rely on the 3rd party library <strong>Popper</strong> for positioning. You must include <code>popper.min.js</code> before <code>bootstrap.js</code> or use 
+  <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper in order for tooltips to work!</li>
+  <li>Tooltips are opt-in for performance reasons, <strong>so you must initialize them yourself</strong>.</li>
+  <li>Tooltips with zero-length titles are never displayed.</li>
+  <li>Specify <code>container: 'body'</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
+  <li>Triggering tooltips on hidden elements will not work.</li>
+  <li>Tooltips for <code>.disabled</code> or <code>disabled</code> elements must be triggered on a wrapper element.</li>
+  <li>When triggered from hyperlinks that span multiple lines, tooltips will be centered. Use <code>white-space: nowrap;</code> on your <code>&lt;a&gt;</code>s to avoid this behavior.</li>
+  <li>Tooltips must be hidden before their corresponding elements have been removed from the DOM.</li>
+  <li>Tooltips can be triggered thanks to an element inside a shadow DOM.</li>
+</ul>
+        ]]>
+      </description>
+      <code language="javascript">
+        <![CDATA[
+// Enable tooltips everywhere
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+        ]]>
+      </code>
+      <code language="html">
+        <![CDATA[
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

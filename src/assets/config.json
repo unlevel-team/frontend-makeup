@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "contexts": ["w3c", "bootstrap", "foundation"],
   "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
-    "pseudo-classes", "grid", "buttons", "forms", "tooltips"],
+    "pseudo-classes", "grid", "buttons", "forms", "tooltips", "card"],
   "contexts-config": {
     "w3c": {
       "topics": {
@@ -32,6 +32,9 @@
         },
         "forms": {
           "data-file": "w3c/forms.xml"
+        },
+        "tooltips": {
+          "data-file": "w3c/tooltips.xml"
         }
       }
     },
@@ -45,6 +48,9 @@
         },
         "forms": {
           "data-file": "bootstrap/forms.xml"
+        },
+        "tooltips": {
+          "data-file": "bootstrap/tooltips.xml"
         }
       }
     },
@@ -58,6 +64,9 @@
         },
         "forms": {
           "data-file": "foundation/forms.xml"
+        },
+        "tooltips": {
+          "data-file": "foundation/tooltips.xml"
         }
       }
     }
@@ -74,7 +83,8 @@
       "grid": { "url": "/grid" },
       "animations": { "url": "/animations" },
       "buttons": { "url": "/buttons" },
-      "forms": { "url": "/forms" }
+      "forms": { "url": "/forms" },
+      "tooltips": { "url": "/tooltips" }
     }
   },
   "sidebar": {
@@ -87,7 +97,8 @@
       "grid": { "text": "Grid", "url": "./grid" },
       "animations": { "text": "Animations", "url": "./animations" },
       "buttons": { "text": "Buttons", "url": "./buttons" },
-      "forms": { "text": "Forms", "url": "./forms" }
+      "forms": { "text": "Forms", "url": "./forms" },
+      "tooltips": { "text": "Tooltips", "url": "./tooltips" }
     }
   },
   "context-picker": {
