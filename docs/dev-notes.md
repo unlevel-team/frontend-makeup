@@ -11,10 +11,9 @@
 
 ## Tasks
 
-### Header buttons
+### Modal for code (review)
 
-### Modal component used at header
-
+### Topic for colours
 
 
 

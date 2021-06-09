@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "contexts": ["w3c", "bootstrap", "foundation"],
   "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
-    "pseudo-classes", "grid", "buttons", "forms", "tooltips", "card"],
+    "pseudo-classes", "grid", "buttons", "forms", "tooltips"],
   "contexts-config": {
     "w3c": {
       "topics": {
