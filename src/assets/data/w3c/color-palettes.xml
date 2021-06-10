@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="color-palettes">
+    <title value="Color palettes" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The color palettes
+      ]]>
+    </description>
+    <concept name="coolors">
+      <title value="Coolors" />
+      <docLink value="https://coolors.co/" />
+      <description>
+        <![CDATA[
+Create the perfect palette or get inspired by thousands of beautiful color schemes. <br>
+<a href="https://coolors.co/" target="_blank">https://coolors.co/</a>
+        ]]>
+      </description>
+    </concept>
+    <concept name="color-hunt">
+      <title value="Color Hunt" />
+      <docLink value="https://colorhunt.co/" />
+      <description>
+        <![CDATA[
+Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes. <br>
+<a href="https://colorhunt.co/" target="_blank">https://colorhunt.co/</a>
+        ]]> 
+      </description>
+    </concept>
+    <concept name="paletton">
+      <title value="Paletton" />
+      <docLink value="https://paletton.com/" />
+      <description>
+        <![CDATA[
+Paletton is here to help you with all your color palette needs. <br>
+You don’t need to know the ins and outs of color theory in order to use Paletton’s unique and easy color wheel. 
+All you need to do is choose the basic color you are interested in exploring, and get inspired. <br>
+<a href="https://paletton.com/" target="_blank">https://paletton.com/</a>
+        ]]> 
+      </description>
+    </concept>
+  </topic>
+</data>

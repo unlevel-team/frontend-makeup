@@ -28,9 +28,24 @@ section.concept a.docLink:hover {
   color: var(--color-secondary-1-foreground);
 }
 
+/* Description --------------------------------------------------------- */
+
 section.concept .description {
   padding-top: 0.7em;
   padding-bottom: 0.3em;
+}
+
+section.concept .description a,
+section.concept .description a:visited {
+  color: var(--color-secondary-1-detail-2);
+  text-decoration: none;
+  padding-left: 0.7pt;
+  padding-right: 0.7pt;
+}
+
+section.concept .description a:hover {
+  background-color: var(--color-secondary-1-background);
+  color: var(--color-secondary-2-detail-1);
 }
 
 section.concept .description code {

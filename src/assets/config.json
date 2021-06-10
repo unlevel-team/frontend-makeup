@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "contexts": ["w3c", "bootstrap", "foundation"],
   "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
-    "pseudo-classes", "grid", "buttons", "forms", "tooltips"],
+    "pseudo-classes", "grid", "buttons", "forms", "tooltips", "color-palettes"],
   "contexts-config": {
     "w3c": {
       "topics": {
@@ -11,6 +11,9 @@
         },
         "fonts": {
           "data-file": "w3c/fonts.xml"
+        },
+        "color-palettes": {
+          "data-file": "w3c/color-palettes.xml"
         },
         "media-queries": {
           "data-file": "w3c/media-queries.xml"
@@ -77,6 +80,7 @@
     "routes": {
       "css-basics": { "url": "/css-basics" },
       "fonts": { "url": "/fonts" },
+      "color-palettes": { "url": "/color-palettes" },
       "media-queries": { "url": "/media-queries" },
       "css-variables": { "url": "/css-variables" },
       "pseudo-classes": { "url": "/pseudo-classes" },
@@ -91,6 +95,7 @@
     "links": {
       "css-basics": { "text": "CSS basics", "url": "./css-basics" },
       "fonts": { "text": "Fonts", "url": "./fonts" },
+      "color-palettes": { "text": "Color palettes", "url": "./color-palettes" },
       "media-queries": { "text": "Media queries", "url": "./media-queries" },
       "css-variables": { "text": "CSS variables", "url": "./css-variables" },
       "pseudo-classes": { "text": "Pseudo-classes", "url": "./pseudo-classes" },

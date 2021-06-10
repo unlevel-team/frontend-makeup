@@ -13,7 +13,7 @@
 
 ### Modal for code (review)
 
-### Topic for colours
+### Topic for color palettes
 
 
 
