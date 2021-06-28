@@ -13,11 +13,12 @@
 
 ### Modal for code (review)
 
-### Topic for color palettes
-
-
 
 ## References
 
 https://get.foundation/sites/docs/kitchen-sink.html
 
+
+## Deploy tasks
+
+- Change router.basepath at config.json

@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "contexts": ["w3c", "bootstrap", "foundation"],
+  "contexts": ["w3c", "bootstrap", "foundation", "other"],
   "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
     "pseudo-classes", "grid", "buttons", "forms", "tooltips", "color-palettes"],
   "contexts-config": {
@@ -11,9 +11,6 @@
         },
         "fonts": {
           "data-file": "w3c/fonts.xml"
-        },
-        "color-palettes": {
-          "data-file": "w3c/color-palettes.xml"
         },
         "media-queries": {
           "data-file": "w3c/media-queries.xml"
@@ -72,6 +69,13 @@
           "data-file": "foundation/tooltips.xml"
         }
       }
+    },
+    "other": {
+      "topics": {
+        "color-palettes": {
+          "data-file": "other/color-palettes.xml"
+        }
+      }   
     }
   },
   "router": {
