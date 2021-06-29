@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="buttons">
+    <title value="Foundation buttons" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The Foundation buttons
+      ]]>
+    </description>
+    <concept name="basics">
+      <title value="Basics" />
+      <docLink value="https://get.foundation/sites/docs/button.html" />
+      <description>
+        <![CDATA[
+A basic button can be created with minimal markup. Because buttons can be used for many purposes, it's important to use the right tag.
+<ul>
+  <li>Use the <code>&lt;a&gt;</code> tag if the button is a link to another page, or a link to an anchor within a page. Generally anchors don't require JavaScript to work.</li>
+  <li>Use the <code>&lt;button&gt;</code> tag if the button performs an action that changes something on the current page. <code>&lt;button&gt;</code> elements almost always require JavaScript to function.</li>
+</ul>
+Add the attribute <code>type="button"</code> to <code>&lt;button&gt;</code> elements, unless the button submits a form, in which case you should add the class <code>.submit</code> and remove <code>type="button"</code>
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<!-- Anchors (links) -->
+<a href="about.html" class="button">Learn More</a>
+<a href="#features" class="button">View All Features</a>
+
+<!-- Buttons (actions) -->
+<button type="button" class="success button">Save</button>
+<button type="button" class="alert button">Delete</button>
+        ]]>
+      </code>
+    </concept>
+    <concept name="sizing">
+      <title value="Sizing" />
+      <docLink value="https://get.foundation/sites/docs/button.html" />
+      <description>
+        <![CDATA[
+Additional classes can be added to your button to change its size and shape.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<a class="button tiny" href="#">So Tiny</a>
+<a class="button small" href="#">So Small</a>
+<a class="button" href="#">So Basic</a>
+<a class="button large" href="#">So Large</a>
+<a class="button expanded" href="#">Such Expand</a>
+<a class="button small expanded" href="#">Wow, Small Expand</a>
+        ]]>
+      </code>
+      <code language="html">
+        <![CDATA[
+<!-- Responsive and expanded buttons -->
+<a class="button small small-only-expanded" href="#">Wow, Expand only on small viewport</a>
+<a class="button small medium-only-expanded" href="#">Expand only on medium viewport</a>
+<a class="button small large-only-expanded" href="#">Expand only on large viewport</a>
+
+<a class="button small medium-expanded" href="#">Wow, Expand on medium and larger</a>
+<a class="button small large-expanded" href="#">Expand on large and larger</a>
+
+<a class="button small medium-down-expanded" href="#">Expand on medium and smaller</a>
+<a class="button small large-down-expanded" href="#">Expand on large and smaller</a>
+        ]]>
+      </code>
+    </concept>
+    <concept name="coloring">
+      <title value="Coloring" />
+      <docLink value="https://get.foundation/sites/docs/button.html" />
+      <description>
+        <![CDATA[
+Add color classes to give buttons additional meaning.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<a class="button primary" href="#">Primary</a>
+<a class="button secondary" href="#">Secondary</a>
+<a class="button success" href="#">Success</a>
+<a class="button alert" href="#">Alert</a>
+<a class="button warning" href="#">Warning</a>
+        ]]>
+      </code>
+    </concept>
+    <concept name="hollow-style">
+      <title value="Hollow Style" />
+      <docLink value="https://get.foundation/sites/docs/button.html" />
+      <description>
+        <![CDATA[
+Add the <code>.hollow</code> class to a button to give it a hollow style. Change the <code>$button-fill</code> variable in your settings file to <code>hollow</code> to make this the 
+default style. Changing this setting will remove the <code>.hollow</code> class from your CSS.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<button class="hollow button" href="#">Primary</button>
+<button class="hollow button secondary" href="#">Secondary</button>
+<button class="hollow button success" href="#">Success</button>
+<button class="hollow button alert" href="#">Alert</button>
+<button class="hollow button warning" href="#">Warning</button>
+<button class="hollow button" href="#" disabled>Disabled</button>
+        ]]>
+      </code>
+    </concept>
+    <concept name="disabled-buttons">
+      <title value="Disabled Buttons" />
+      <docLink value="https://get.foundation/sites/docs/button.html" />
+      <description>
+        <![CDATA[
+The <code>.disabled</code> class will give buttons a faded appearance. The class is a purely visual style, and won't actually disable a control. 
+For <code>&lt;button&gt;</code> elements, you can add the <code>disabled</code> attribute to both disable and style it. If you want to disable a link, 
+you should add the <code>aria-disabled</code> attribute to mark it as disabled for assistive technology.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<a class="button disabled" href="#" aria-disabled>Disabled</a>
+<button type="button" class="button primary" disabled>Disabled</button>
+<button type="button" class="button secondary" disabled>Disabled</button>
+<button type="button" class="button success" disabled>Disabled</button>
+<button type="button" class="button alert" disabled>Disabled</button>
+<button type="button" class="button warning" disabled>Disabled</button>
+
+<a class="button hollow disabled" href="#" aria-disabled>Disabled</a>
+<button type="button" class="button hollow primary" disabled>Disabled</button>
+<button type="button" class="button hollow secondary" disabled>Disabled</button>
+<button type="button" class="button hollow success" disabled>Disabled</button>
+<button type="button" class="button hollow alert" disabled>Disabled</button>
+<button type="button" class="button hollow warning" disabled>Disabled</button>
+        ]]>
+      </code>
+    </concept>
+    <concept name="clear-style">
+      <title value="Clear Style" />
+      <docLink value="https://get.foundation/sites/docs/button.html" />
+      <description>
+        <![CDATA[
+Add the <code>.clear</code> class to a button to give it a clear style. Change the <code>$button-fill</code> variable in your settings file to <code>clear</code> to make this the default style. 
+Changing this setting will remove the <code>.clear</code> class from your CSS.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<a class="clear button" href="#">Primary</a>
+<a class="clear button secondary" href="#">Secondary</a>
+<a class="clear button success" href="#">Success</a>
+<a class="clear button alert" href="#">Alert</a>
+<a class="clear button warning" href="#">Warning</a>
+<a class="clear button" href="#" disabled>Disabled</a>
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

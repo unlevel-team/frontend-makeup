@@ -1,0 +1,126 @@
+{
+  "version": "0.0.1",
+  "contexts": ["w3c", "bootstrap", "foundation", "other"],
+  "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
+    "pseudo-classes", "grid", "buttons", "forms", "tooltips", "color-palettes", "icons-images"],
+  "contexts-config": {
+    "w3c": {
+      "topics": {
+        "css-basics": {
+          "data-file": "w3c/css.xml"
+        },
+        "fonts": {
+          "data-file": "w3c/fonts.xml"
+        },
+        "media-queries": {
+          "data-file": "w3c/media-queries.xml"
+        },
+        "css-variables": {
+          "data-file": "w3c/css-variables.xml"
+        },
+        "pseudo-classes": {
+          "data-file": "w3c/pseudo-classes.xml"
+        },
+        "animations": {
+          "data-file": "w3c/animations.xml"
+        },
+        "grid": {
+          "data-file": "w3c/grid.xml"
+        },
+        "buttons": {
+          "data-file": "w3c/buttons.xml"
+        },
+        "forms": {
+          "data-file": "w3c/forms.xml"
+        },
+        "tooltips": {
+          "data-file": "w3c/tooltips.xml"
+        }
+      }
+    },
+    "bootstrap": {
+      "topics": {
+        "grid": {
+          "data-file": "bootstrap/grid.xml"
+        },
+        "buttons": {
+          "data-file": "bootstrap/buttons.xml"
+        },
+        "forms": {
+          "data-file": "bootstrap/forms.xml"
+        },
+        "tooltips": {
+          "data-file": "bootstrap/tooltips.xml"
+        }
+      }
+    },
+    "foundation": {
+      "topics": {
+        "grid": {
+          "data-file": "foundation/grid.xml"
+        },
+        "buttons": {
+          "data-file": "foundation/buttons.xml"
+        },
+        "forms": {
+          "data-file": "foundation/forms.xml"
+        },
+        "tooltips": {
+          "data-file": "foundation/tooltips.xml"
+        }
+      }
+    },
+    "other": {
+      "topics": {
+        "color-palettes": {
+          "data-file": "other/color-palettes.xml"
+        },
+        "icons-images": {
+          "data-file": "other/icons-images.xml"
+        }
+      }   
+    }
+  },
+  "router": {
+    "basePath": "/",
+    "default": "/css-basics",
+    "routes": {
+      "css-basics": { "url": "/css-basics" },
+      "fonts": { "url": "/fonts" },
+      "color-palettes": { "url": "/color-palettes" },
+      "media-queries": { "url": "/media-queries" },
+      "icons-images": { "url": "/icons-images" },
+      "css-variables": { "url": "/css-variables" },
+      "pseudo-classes": { "url": "/pseudo-classes" },
+      "grid": { "url": "/grid" },
+      "animations": { "url": "/animations" },
+      "buttons": { "url": "/buttons" },
+      "forms": { "url": "/forms" },
+      "tooltips": { "url": "/tooltips" }
+    }
+  },
+  "sidebar": {
+    "links": {
+      "css-basics": { "text": "CSS basics", "url": "./css-basics" },
+      "fonts": { "text": "Fonts", "url": "./fonts" },
+      "color-palettes": { "text": "Color palettes", "url": "./color-palettes" },
+      "icons-images": { "text": "Icons and images", "url": "./icons-images" },
+      "media-queries": { "text": "Media queries", "url": "./media-queries" },
+      "css-variables": { "text": "CSS variables", "url": "./css-variables" },
+      "pseudo-classes": { "text": "Pseudo-classes", "url": "./pseudo-classes" },
+      "grid": { "text": "Grid", "url": "./grid" },
+      "animations": { "text": "Animations", "url": "./animations" },
+      "buttons": { "text": "Buttons", "url": "./buttons" },
+      "forms": { "text": "Forms", "url": "./forms" },
+      "tooltips": { "text": "Tooltips", "url": "./tooltips" }
+    }
+  },
+  "context-picker": {
+    "default": "w3c",
+    "buttons": {
+      "w3c": { "text": "W3C" },
+      "bootstrap": { "text": "Bootstrap" },
+      "foundation": { "text": "Foundation" }
+    }
+  }
+}

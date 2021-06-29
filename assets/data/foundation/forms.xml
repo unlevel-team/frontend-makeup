@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="forms">
+    <title value="Foundation forms" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The Foundation forms
+      ]]>
+    </description>
+    <concept name="help-text">
+      <title value="Help Text (Accessibility)" />
+      <docLink value="https://get.foundation/sites/docs/forms.html" />
+      <description>
+        <![CDATA[
+Place help text below a field to clarify its purpose. Whenever you use help text, give the text a unique ID, and add the 
+attribute <code>aria-describedby</code> to the input. Doing so associates the helper text to the input. A screen reader then can read the helper text 
+when the user focusses on the input.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<label>Password
+  <input type="password" aria-describedby="passwordHelpText">
+</label>
+<p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an Emoji.</p>
+        ]]>
+      </code>
+    </concept>
+    <concept name="help-text">
+      <title value="Help Text (Accessibility)" />
+      <docLink value="https://get.foundation/sites/docs/forms.html" />
+      <description>
+        <![CDATA[
+Place help text below a field to clarify its purpose. Whenever you use help text, give the text a unique ID, and add the 
+attribute <code>aria-describedby</code> to the input. Doing so associates the helper text to the input. A screen reader then can read the helper text 
+when the user focusses on the input.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<label>Password
+  <input type="password" aria-describedby="passwordHelpText">
+</label>
+<p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an Emoji.</p>
+        ]]>
+      </code>
+    </concept>
+    <concept name="label-positioning">
+      <title value="Label Positioning" />
+      <docLink value="https://get.foundation/sites/docs/forms.html" />
+      <description>
+        <![CDATA[
+Sometimes you want a form with labels to the left of your inputs. Piece of cake! You can put the label inside a different cell or 
+column to the left of the input. Then use the class <code>.text-right</code> or <code>.float-right</code> (or add <code>text-align: right</code> yourself) to realign the label.
+Add the <code>.middle</code> class to vertically align the label with its input.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<form>
+  <div class="grid-x grid-padding-x">
+    <div class="small-3 cell">
+      <label for="right-label" class="text-right">Label</label>
+    </div>
+    <div class="small-9 cell">
+      <input type="text" id="right-label" placeholder="Right-aligned text input">
+    </div>
+  </div>
+</form>
+
+<form>
+  <div class="grid-x grid-padding-x">
+    <div class="small-3 cell">
+      <label for="middle-label" class="text-right middle">Label</label>
+    </div>
+    <div class="small-9 cell">
+      <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+    </div>
+  </div>
+</form>
+        ]]>
+      </code>
+    </concept>
+    <concept name="inline-labels-buttons">
+      <title value="Inline Labels and Buttons" />
+      <docLink value="https://get.foundation/sites/docs/forms.html" />
+      <description>
+        <![CDATA[
+To attach extra text or controls to the left or right of an input field, wrap the elements in an <code>.input-group</code> container, 
+then add these classes to the elements inside:
+<ul>
+  <li><code>.input-group-field</code> on the text field.</li>
+  <li><code>.input-group-label</code> on a text label.</li>
+  <li><code>.input-group-button</code> on a button. Place the button inside this wrapper.</li>
+</ul>
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<div class="input-group">
+  <span class="input-group-label">$</span>
+  <input class="input-group-field" type="number">
+  <div class="input-group-button">
+    <input type="submit" class="button" value="Submit">
+  </div>
+</div>
+        ]]>
+      </code>
+    </concept>
+    <concept name="file-upload-button">
+      <title value="File Upload Button" />
+      <docLink value="https://get.foundation/sites/docs/forms.html" />
+      <description>
+        <![CDATA[
+Use <code>&lt;input type=&quot;file&quot;&gt;</code> to create a file upload button. For security reasons, most browsers don't let you style file inputs. To work around that, 
+we can style a form label as a button, and point it to the <code>&lt;input&gt;</code>. To properly mask the input, the <code>.show-for-sr</code> class is added.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<label for="exampleFileUpload" class="button">Upload File</label>
+<input type="file" id="exampleFileUpload" class="show-for-sr">
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

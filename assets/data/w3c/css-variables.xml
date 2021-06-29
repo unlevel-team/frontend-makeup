@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="css-variables">
+    <title value="CSS variables" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The CSS variables
+      ]]>
+    </description>
+    <concept name="css-variables">
+      <title value="CSS Variables" />
+      <docLink value="https://www.w3schools.com/css/css3_variables.asp" />
+      <description>
+        <![CDATA[
+The <code>var()</code> function is used to insert the value of a CSS variable. </br>
+CSS variables have access to the DOM, which means that you can create variables with local or global scope, 
+change the variables with JavaScript, and change the variables based on media queries. </br>
+Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+body { background-color: var(--blue); }
+
+h2 { border-bottom: 2px solid var(--blue); }
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

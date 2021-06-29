@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="buttons">
+    <title value="Bootstrap buttons" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        Bootstrap buttons
+      ]]>
+    </description>
+    <concept name="predefined-button-styles">
+      <title value="Predefined button styles" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/buttons/" />
+      <description>
+        <![CDATA[
+          Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+        ]]>
+      </code>
+    </concept>
+
+    <concept name="button-tags">
+      <title value="Button tags" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/buttons/" />
+      <description>
+        <![CDATA[
+          The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. 
+          However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+        ]]>
+      </code>
+    </concept>
+    <concept name="outline-buttons">
+      <title value="Outline buttons" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/buttons/" />
+      <description>
+        <![CDATA[
+          Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+        ]]>
+      </code>
+    </concept>
+    <concept name="button-sizes">
+      <title value="Sizes" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/buttons/" />
+      <description>
+        <![CDATA[
+          Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes. <br/>
+          Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block</code>.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+        ]]>
+      </code>
+    </concept>
+    <concept name="active-state">
+      <title value="Active state" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/buttons/" />
+      <description>
+        <![CDATA[
+Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. <strong>There’s no need to add a class to <code>&lt;button&gt;</code>s as 
+they use a pseudo-class</strong>. However, you can still force the same active appearance with .active (and include the <code>aria-pressed="true"</code> attribute) 
+should you need to replicate the state programmatically.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+        ]]>
+      </code>
+    </concept>
+    <concept name="disabled-state">
+      <title value="Disabled state" />
+      <docLink value="https://getbootstrap.com/docs/4.5/components/buttons/" />
+      <description>
+        <![CDATA[
+Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element. <br/>
+<code><a></code>s don’t support the <code>disabled</code> attribute, so you must add the <code>.disabled</code> class to make it visually appear disabled.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+<a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

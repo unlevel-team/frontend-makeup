@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="css-basics">
+    <title value="CSS" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.
+      ]]>
+    </description>
+    <concept name="add-css">
+      <title value="How To Add CSS" />
+      <docLink value="https://www.w3schools.com/css/css_howto.asp" />
+      <description>
+        <![CDATA[
+          When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. <br>
+          There are three ways of inserting a style sheet:
+          <ul>
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+          </ul>
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<!-- External CSS -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
+
+</body>
+</html>
+        ]]>
+      </code>
+      <code language="css">
+        <![CDATA[
+/* file "mystyle.css" */
+@charset "UTF-8";
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

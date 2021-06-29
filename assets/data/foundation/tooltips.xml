@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="tooltips">
+    <title value="Foundation tooltips" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        The Foundation tooltips
+      ]]>
+    </description>
+    <concept name="tooltip-plugin">
+      <title value="The tooltip plugin" />
+      <docLink value="https://get.foundation/sites/docs/tooltip.html" />
+      <description>
+        <![CDATA[
+The following files must be included in your JavaScript to use this plugin:
+<ul>
+  <li><code>foundation.core.js</code></li>
+  <li><code>foundation.tooltip.js</code>
+    <ul>
+      <li>With utility library <code>foundation.util.box.js</code></li>
+      <li>With utility library <code>foundation.util.mediaQuery.js</code></li>
+      <li>With utility library <code>foundation.util.triggers.js</code></li>
+    </ul>
+  </li>
+</ul>
+        ]]>
+      </description>
+      <code language="javascript">
+        <![CDATA[
+// Creates a new instance of a Tooltip.
+
+var elem = new Foundation.Tooltip(element, options);
+        ]]>
+      </code>
+    </concept>
+    <concept name="basic-tooltip">
+      <title value="Basic Tooltip" />
+      <docLink value="https://get.foundation/sites/docs/tooltip.html" />
+      <description>
+        <![CDATA[
+By default, a tooltip appears below the defined term on hover.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+The <span data-tooltip tabindex="1" title="Fancy word for a beetle.">scarabaeus</span> hung quite
+clear of any branches, and, if allowed to fall, would have fallen at our feet.
+        ]]>
+      </code>
+    </concept>
+    <concept name="tooltip-top">
+      <title value="Tooltip Top" />
+      <docLink value="https://get.foundation/sites/docs/tooltip.html" />
+      <description>
+        <![CDATA[
+To get a tip-top top tooltip (lol), just add the class <code>.top</code> to the <code>&lt;span&gt;</code> element.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+The <span data-tooltip class="top" tabindex="2" title="Fancy word for a beetle.">scarabaeus</span>
+hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet.
+        ]]>
+      </code>
+    </concept>
+    <concept name="tooltip-clicking">
+      <title value="Tooltip clicking" />
+      <docLink value="https://get.foundation/sites/docs/tooltip.html" />
+      <description>
+        <![CDATA[
+By default, clicking on a tooltip will leave it open until you click somewhere else. However, you can disable that by adding <code>data-click-open="false"</cdoe>
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+this
+<span data-tooltip class="top" tabindex="2" title="You see?  I'm open!">
+  tooltip will stay open
+</span>
+while
+<span data-tooltip class="top" data-click-open="false" tabindex="2" title="I don't stay open">
+  this one will only be open when hovered
+</span>
+        ]]>
+      </code>
+    </concept>
+    <concept name="tooltip-right-left">
+      <title value="Tooltip Right and Left" />
+      <docLink value="https://get.foundation/sites/docs/tooltip.html" />
+      <description>
+        <![CDATA[
+You can also position the tooltips to the right and left of the word by adding the classes <code>.right</code> or <code>.left</code> to the <code>&lt;span&gt;</code> element.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+When he was dressed he went down the hall into the
+<span data-tooltip class="right" tabindex="3" title="Aligned on the right">kitchen</span>.
+The table was almost hidden beneath all Dudley's birthday presents. It looked as though
+<span data-tooltip class="left" tabindex="4" title="Aligned on the left">Dudley</span>
+had gotten the new computer he wanted, not to mention the second television and the racing bike.
+        ]]>
+      </code>
+    </concept>
+    <concept name="explicit-positioning">
+      <title value="Explicit Positioning" />
+      <docLink value="https://get.foundation/sites/docs/tooltip.html" />
+      <description>
+        <![CDATA[
+Now with tooltips you can define both positions for the tip. These tooltips have a fully explicit positioning model through which you can use both 
+<code>data-position</code> and <code>data-alignment</code> to define both positions of the box.
+        ]]>
+      </description>
+      <code language="html">
+        <![CDATA[
+<!-- Top and Bottom positioned -->
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="bottom" data-alignment="left">
+  Bottom Left
+</button>
+
+<button class="button" type="button"  data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="bottom" data-alignment="center">
+  Bottom Center
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="bottom" data-alignment="right">
+  Bottom Right
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="left">
+  Top Left
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="center">
+  Top Center
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="right">
+  Top Right
+</button>
+        ]]>
+      </code>
+      <code language="html">
+        <![CDATA[
+<!-- Left and Right Positioned -->
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="right" data-alignment="top">
+  Right Top
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="left" data-alignment="top">
+  Left Top
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="right" data-alignment="center">
+  Right Center
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="left" data-alignment="center">
+  Left Center
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="right" data-alignment="bottom">
+  Right Bottom
+</button>
+
+<button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="left" data-alignment="bottom">
+  Left Bottom
+</button>
+        ]]>
+      </code>
+    </concept>
+  </topic>
+</data>

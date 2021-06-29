@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="fonts">
+    <title value="CSS fonts" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+        Web fonts allow Web designers to use fonts that are not installed on the user's computer. <br>
+        When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.
+      ]]>
+    </description>
+    <concept name="font-formats">
+      <title value="Font formats" />
+      <docLink value="https://www.w3schools.com/css/css3_fonts.asp" />
+      <description>
+        <![CDATA[
+          There are different formats for define the fonts.
+          <ul>
+            <li>TrueType Fonts (TTF)</li>
+            <li>OpenType Fonts (OTF)</li>
+            <li>The Web Open Font Format (WOFF)</li>
+            <li>The Web Open Font Format (WOFF 2.0)</li>
+            <li>SVG Fonts/Shapes</li>
+            <li>Embedded OpenType Fonts (EOT)</li>
+          </ul>
+        ]]>
+      </description>
+    </concept>
+
+    <concept name="define-use-font">
+      <title value="Define and use a font" />
+      <docLink value="https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp" />
+      <description>
+        <![CDATA[
+          With the <code>@font-face</code> rule, web designers do not have to use one of the <code>"web-safe"</code> fonts anymore. <br>
+          In the <code>@font-face</code> rule you must first define a name for the font (e.g. myFirstFont), and then point to the font file. <br>
+          To use the font for an HTML element, refer to the name of the font (myFirstFont) through the <code>font-family</code> property
+        ]]>
+      </description>
+      <code language="css">
+        <![CDATA[
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+
+div {
+  font-family: myFirstFont;
+}
+        ]]>
+      </code>
+    </concept>
+
+  </topic>
+</data>
