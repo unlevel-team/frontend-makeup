@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "contexts": ["w3c", "bootstrap", "foundation", "other"],
   "topics": ["css-basics", "animations", "fonts", "color-paletes", "media-queries", "css-variables", 
-    "pseudo-classes", "grid", "buttons", "forms", "tooltips", "color-palettes"],
+    "pseudo-classes", "grid", "buttons", "forms", "tooltips", "color-palettes", "icons-images"],
   "contexts-config": {
     "w3c": {
       "topics": {
@@ -74,6 +74,9 @@
       "topics": {
         "color-palettes": {
           "data-file": "other/color-palettes.xml"
+        },
+        "icons-images": {
+          "data-file": "other/icons-images.xml"
         }
       }   
     }
@@ -86,6 +89,7 @@
       "fonts": { "url": "/fonts" },
       "color-palettes": { "url": "/color-palettes" },
       "media-queries": { "url": "/media-queries" },
+      "icons-images": { "url": "/icons-images" },
       "css-variables": { "url": "/css-variables" },
       "pseudo-classes": { "url": "/pseudo-classes" },
       "grid": { "url": "/grid" },
@@ -100,6 +104,7 @@
       "css-basics": { "text": "CSS basics", "url": "./css-basics" },
       "fonts": { "text": "Fonts", "url": "./fonts" },
       "color-palettes": { "text": "Color palettes", "url": "./color-palettes" },
+      "icons-images": { "text": "Icons and images", "url": "./icons-images" },
       "media-queries": { "text": "Media queries", "url": "./media-queries" },
       "css-variables": { "text": "CSS variables", "url": "./css-variables" },
       "pseudo-classes": { "text": "Pseudo-classes", "url": "./pseudo-classes" },

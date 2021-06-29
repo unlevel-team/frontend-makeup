@@ -21,4 +21,6 @@ https://get.foundation/sites/docs/kitchen-sink.html
 
 ## Deploy tasks
 
+- Merge branches into 'master'
+- Build the project
 - Change router.basepath at config.json

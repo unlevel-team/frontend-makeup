@@ -81,8 +81,10 @@ const _PICKCONTEXT = {
     const { myDIV } = _ENV;
     myDIV.querySelectorAll('button')
       .forEach((_button) => { _button.classList.remove('is-active'); });
-    myDIV.querySelector(`button[data-context="${_data.context}"]`)
-      .classList.add('is-active');
+    const _button = myDIV.querySelector(`button[data-context="${_data.context}"]`);
+    if (_button !== null) {
+      _button.classList.add('is-active');
+    }
   },
 
 };
