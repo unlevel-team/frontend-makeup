@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <topic name="icons-images">
+    <title value="Icons and images" />
+    <!-- <docLink value="https://www.w3schools.com/tags/tag_title.asp" /> -->
+    <description>
+      <![CDATA[
+Icons and images
+      ]]>
+    </description>
+    <concept name="freeicons">
+      <title value="freeicons.io" />
+      <docLink value="https://freeicons.io/" />
+      <description>
+        <![CDATA[
+THE LARGEST DATABASE OF FREE ICONS <br>
+Available in PNG, SVG, EPS, PSD and BASE 64 formats. <br>
+<a href="https://freeicons.io/" target="_blank">https://freeicons.io/</a>
+        ]]>
+      </description>
+    </concept>
+    <concept name="flaticon">
+      <title value="flaticon" />
+      <docLink value="https://www.flaticon.com/" />
+      <description>
+        <![CDATA[
+Download free vector icons and stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD and BASE 64 formats. <br>
+<a href="https://www.flaticon.com/" target="_blank">https://www.flaticon.com/</a>
+        ]]>
+      </description>
+    </concept>
+    <concept name="freesvg">
+      <title value="freesvg" />
+      <docLink value="https://freesvg.org/" />
+      <description>
+        <![CDATA[
+Download and upload SVG images with CC0 public domain license <br>
+<a href="https://freesvg.org/" target="_blank">https://freesvg.org/</a>
+        ]]>
+      </description>
+    </concept>
+  </topic>
+</data>
