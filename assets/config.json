@@ -82,7 +82,7 @@
     }
   },
   "router": {
-    "basePath": "/frontend-makeup/",
+    "basePath": "/",
     "default": "/css-basics",
     "routes": {
       "css-basics": { "url": "/css-basics" },
