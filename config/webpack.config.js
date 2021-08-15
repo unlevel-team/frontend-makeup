@@ -84,7 +84,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Frontend industry',
+      title: 'Frontend makeup',
       template: `${path.resolve(__dirname, '../public')}/index.webpack.template.html`
     }), // Generates default index.html
     new MiniCssExtractPlugin({
